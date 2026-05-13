@@ -16,3 +16,5 @@ test('Login and logout validation on the-internet.herokuapp.com', async ({ page 
   await page.getByRole('button', { name: 'Logout' }).click();
   await expect(page.locator('#flash')).toContainText('You logged out of the secure area!');
 });
+
+// Test file added for HerokuApp login/logout flow verification.
